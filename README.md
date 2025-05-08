@@ -80,4 +80,39 @@
 ```
 # questao5
 ```java
+        String nome1, nome2;
+        Scanner ler = new Scanner(System.in);
+        nome1 = JOptionPane.showInputDialog("Digite o 1 nome");
+        nome2 = JOptionPane.showInputDialog("Digite o 2 nome");
+        ImprimirTexto(CompararTexto(nome1, nome2));
 
+    }
+
+    public static String CompararTexto(String n1, String n2) {
+        String resp = "resposta: ";
+        if (n1.equals(n2)) {
+            resp = resp + "Os nomes são iguais";
+        }else{ 
+            resp = resp + "Os nomes NÃO são iguais";
+        }
+        
+        return resp;
+    }
+
+    public static void ImprimirTexto(String texto) {
+        JOptionPane.showMessageDialog(null, texto);
+```
+# questao6
+```java
+        Scanner ler = new Scanner(System.in);
+        double celsius;
+        System.out.println("Informe a tremperatura Celsius: ");
+        celsius = ler.nextDouble();
+        System.out.println("A temperatura Cº convertida para Fº é: "+conversor (celsius));
+        
+    }
+    public static double conversor(double temp) {
+        return ( temp * 1.8 + 32 );
+```
+# questao7
+```java
